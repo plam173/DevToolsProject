@@ -1,9 +1,121 @@
-<html>
-	<head>
-		<title>My sample GitHub page</title>
-	</head>
-	<body>
-		<h1>Sample GitHub Page</h1>
-		<p>Showing text</p>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Frameworks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-indigo-600">PromptPlaybook</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#intro" class="hover:text-indigo-600">Intro</a></li>
+        <li><a href="#frameworks" class="hover:text-indigo-600">Frameworks</a></li>
+        <li><a href="#examples" class="hover:text-indigo-600">Examples</a></li>
+        <li><a href="#tips" class="hover:text-indigo-600">Tips</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="intro" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Mastering AI Prompt Frameworks</h2>
+    <p class="max-w-2xl text-gray-600 mb-6">
+      Learn how structured prompt frameworks can turn vague ideas into powerful AI outputs — from storytelling and brainstorming to coding and strategy.
+    </p>
+    <a href="#frameworks" class="bg-indigo-600 text-white px-6 py-3 rounded-full shadow hover:bg-indigo-700 transition">
+      Explore Frameworks
+    </a>
+  </section>
+
+  <!-- Frameworks Section -->
+  <section id="frameworks" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold mb-6 text-center">Popular Prompt Frameworks</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-2xl shadow">
+          <h4 class="text-xl font-bold mb-2 text-indigo-600">1. C.R.E.A.T.E.</h4>
+          <p><strong>Context</strong>, <strong>Role</strong>, <strong>Expectation</strong>, <strong>Action</strong>, <strong>Tone</strong>, <strong>Example</strong>. A framework that helps you guide the AI with clarity and precision.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl shadow">
+          <h4 class="text-xl font-bold mb-2 text-indigo-600">2. I.D.E.A.</h4>
+          <p><strong>Intent</strong>, <strong>Details</strong>, <strong>Examples</strong>, <strong>Adjustments</strong>. Ideal for creative tasks or marketing prompts.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-2xl shadow">
+          <h4 class="text-xl font-bold mb-2 text-indigo-600">3. R.A.C.E.</h4>
+          <p><strong>Role</strong>, <strong>Audience</strong>, <strong>Context</strong>, <strong>Expectation</strong>. Perfect for communication or content strategy prompts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-6">Examples in Action</h3>
+      <div class="max-w-2xl mx-auto text-left space-y-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-bold text-indigo-600 mb-2">Example 1: Marketing Copy</h4>
+          <p><strong>Prompt (I.D.E.A.):</strong>  
+            Intent: Write a fun email for a coffee brand.  
+            Details: Highlight limited-time pumpkin spice latte.  
+            Examples: Starbucks Fall campaign tone.  
+            Adjustments: Make it more Gen Z-friendly.  
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h4 class="font-bold text-indigo-600 mb-2">Example 2: Technical Writing</h4>
+          <p><strong>Prompt (C.R.E.A.T.E.):</strong>  
+            Context: Documenting an API.  
+            Role: You are a senior technical writer.  
+            Expectation: Write a clear, concise intro.  
+            Action: Explain to new developers.  
+            Tone: Professional but friendly.  
+            Example: Stripe API documentation.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+      <h3 class="text-3xl font-semibold mb-6">Prompting Tips</h3>
+      <ul class="text-left space-y-4 list-disc list-inside">
+        <li>Be explicit — tell the AI what role it plays and who the audience is.</li>
+        <li>Use examples to shape tone and format.</li>
+        <li>Iterate — refine your prompts based on the responses.</li>
+        <li>Ask for alternatives or step-by-step reasoning for clarity.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-indigo-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Get in Touch</h3>
+      <p class="text-gray-600 mb-6">Want to learn more or collaborate on prompt design workshops?</p>
+      <a href="mailto:hello@promptplaybook.ai" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center text-sm">
+    <p>&copy; 2025 PromptPlaybook. All rights reserved.</p>
+  </footer>
+</body>
 </html>
